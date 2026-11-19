@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext.jsx';
 import SectionHeading from './SectionHeading.jsx';
 import { waLink } from '../utils/whatsapp.js';
+import Logo from './Logo.jsx';
 
 export default function OutletsFooter() {
   const { data } = useData();
@@ -38,7 +39,7 @@ export default function OutletsFooter() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-saffron bg-maroon font-serif text-2xl font-bold text-amber-300">R</span>
+              <Logo className="h-12 w-12 bg-white p-0.5" />
               <div>
                 <p className="font-serif text-xl font-bold text-white">Raghuvir</p>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-amber-300">Sweets & Bakers</p>
