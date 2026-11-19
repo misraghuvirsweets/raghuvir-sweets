@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { useData } from '../context/DataContext.jsx';
 import { waLink } from '../utils/whatsapp.js';
+import Logo from './Logo.jsx';
 
 const LINKS = [
   ['Home', '#home'],
@@ -49,9 +50,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
         <button onClick={() => scrollToId('#home')} className="flex items-center gap-3 text-left">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-saffron bg-maroon font-serif text-xl font-bold text-amber-300">
-            R
-          </span>
+          <Logo className="h-11 w-11" />
           <span className="leading-tight">
             <span className="block font-serif text-lg font-bold text-maroon md:text-xl">Raghuvir</span>
             <span className="block text-[10px] font-medium uppercase tracking-[0.2em] text-saffron-dark">
