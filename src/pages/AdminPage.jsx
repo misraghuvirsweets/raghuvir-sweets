@@ -8,6 +8,7 @@ import SettingsManager from '../admin/SettingsManager.jsx';
 import BackupManager from '../admin/BackupManager.jsx';
 import { Toast } from '../admin/ui.jsx';
 import { SESSION_KEY } from '../admin/config.js';
+import Logo from '../components/Logo.jsx';
 
 const TABS = [
   ['products', 'Products', Package, ProductsManager],
@@ -40,7 +41,7 @@ export default function AdminPage() {
       <header className="sticky top-0 z-30 border-b border-amber-200 bg-maroon text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-saffron bg-maroon-dark font-serif text-lg font-bold text-amber-300">R</span>
+            <Logo className="h-10 w-10 bg-white p-0.5" />
             <div>
               <p className="font-serif text-lg font-bold leading-tight">Admin Dashboard</p>
               <p className="text-[11px] text-amber-200">Raghuvir Sweets and Bakers</p>
