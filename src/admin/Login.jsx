@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Lock, User, Eye, EyeOff, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ADMIN_ID, ADMIN_PASSWORD, SESSION_KEY } from './config.js';
+import Logo from '../components/Logo.jsx';
 
 export default function Login({ onSuccess }) {
   const [id, setId] = useState('');
@@ -23,7 +24,7 @@ export default function Login({ onSuccess }) {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-maroon-dark via-maroon to-saffron-dark p-4">
       <form onSubmit={submit} className="w-full max-w-sm rounded-3xl border border-amber-300 bg-cream p-8 shadow-2xl">
         <div className="mb-6 text-center">
-          <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-saffron bg-maroon font-serif text-3xl font-bold text-amber-300">R</span>
+          <Logo className="mx-auto h-20 w-20" />
           <h1 className="mt-4 text-2xl font-bold text-maroon">Admin Panel</h1>
           <p className="text-sm text-stone-500">Raghuvir Sweets and Bakers</p>
         </div>
